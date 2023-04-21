@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    fragment ocganmisz 5 ta menu uchun? ha mana torimi? da-->
+    <item
+        android:id="@+id/homePageFragment"
+        android:icon="@drawable/vector__1_"
+        android:title="Home" />
+    <item
+        android:id="@+id/categoriesFragment"
+        android:icon="@drawable/vector__2_"
+        android:title="Choose" />
+    <item
+        android:id="@+id/bookmarksFragment"
+        android:icon="@drawable/vector__3_"
+        android:title="Save" />
+    <item
+        android:id="@+id/userFragment"
+        android:icon="@drawable/vector__4_"
+        android:title="User" />
+
+
+
+</menu>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nov_grapth"
+    app:startDestination="@id/mainkFragment">
+
+    <fragment
+        android:id="@+id/bookmarksFragment"
+        android:name="com.example.nuntium.onlilefragment.BookmarksFragment"
+        android:label="fragment_bookmarks"
+        tools:layout="@layout/fragment_bookmarks" >
+        <action
+            android:id="@+id/action_bookmarksFragment_to_articlePageFragment"
+            app:destination="@id/articlePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.nuntium.onlilefragment.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_userFragment_to_language2"
+            app:destination="@id/language2" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.example.nuntium.onlilefragment.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page">
+        <action
+            android:id="@+id/action_homePageFragment_to_articlePageFragment"
+            app:destination="@id/articlePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.example.nuntium.onlilefragment.CategoriesFragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories"/>
+    <fragment
+        android:id="@+id/articlePageFragment"
+        android:name="com.example.nuntium.onlilefragment.ArticlePageFragment"
+        android:label="fragment_article_page"
+        tools:layout="@layout/fragment_article_page" />
+    <fragment
+        android:id="@+id/mainkFragment"
+        android:name="com.example.nuntium.offline.MainkFragment"
+        android:label="fragment_maink"
+        tools:layout="@layout/fragment_maink">
+        <action
+            android:id="@+id/action_mainkFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.example.nuntium.offline.OnboardingFragment"
+        android:label="fragment_onboarding"
+        tools:layout="@layout/fragment_onboarding">
+        <action
+            android:id="@+id/action_onboardingFragment_to_welcomeScreenFragment"
+            app:destination="@id/welcomeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeScreenFragment"
+        android:name="com.example.nuntium.offline.WelcomeScreenFragment"
+        android:label="fragment_welcome_screen"
+        tools:layout="@layout/fragment_welcome_screen">
+        <action
+            android:id="@+id/action_welcomeScreenFragment_to_chooseFragment"
+            app:destination="@id/chooseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseFragment"
+        android:name="com.example.nuntium.offline.ChooseFragment"
+        android:label="fragment_choose"
+        tools:layout="@layout/fragment_choose" />
+    <fragment
+        android:id="@+id/language2"
+        android:name="com.example.nuntium.onlilefragment.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+</navigation>
